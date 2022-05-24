@@ -42,7 +42,7 @@ Deployment instructions
 ----------------------------------
 
 ==============================
-Contribuition guitelines
+Contribution guidelines
 ==============================
 
 ----------------------------------
@@ -54,7 +54,7 @@ Code review
 ----------------------------------
 
 ----------------------------------
-Other guitelines
+Other guidelines
 ----------------------------------
 
 ==============================
@@ -64,7 +64,7 @@ Who do I talk to?
 ----------------------------------
 Repo owner or admin
 ----------------------------------
-`alex carvalho`<alex.carvalho.data@gmail.com>`
+`alex carvalho <mailto: alex.carvalho.data@gmail.com>`_
 
 ----------------------------------
 Other community or team contact
