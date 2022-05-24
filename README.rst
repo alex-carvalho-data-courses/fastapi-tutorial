@@ -2,16 +2,18 @@
  FastAPI Tutorial
 ####################
 
-This README would normally document whatever steps are necessary to get your application up and running.  
-CHANGE_ME  
-
 ==============================
 What is this repository for?
 ==============================
 
+This repository is to follow the official `FastAPI tutorial <https://fastapi.tiangolo.com/tutorial/>`_.
+
 ----------------
 Quick summary
 ----------------
+
+FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python
+type hints.
 
 =======================
 How do I get set up?
