@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fastapi-tutorial"
+version = "0.1.0"
+description = "Project to follow the official FastAPI tutorial [https://fastapi.tiangolo.com/tutorial/]"
+authors = ["alex carvalho <allex.carvalho@gmail.com>"]
+license = "LICENSE"
+readme = "README.md"
+packages = [{include = "fastapi_tutorial"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "~0.101"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
