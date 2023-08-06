@@ -62,3 +62,15 @@ curl 127.0.0.1:8000/models/resnet
 ```shell
 curl 127.0.0.1:8000/models/aleatory
 ```
+
+### 4. Path parameter containing a Path
+
+#### 4.1. relative path
+```shell
+curl 127.0.0.1:8000/files/jon/doe/some_file.txt
+```
+
+#### 4.2. absolute path
+```shell
+curl 127.0.0.1:8000/files//home/jon/doe/some_file.txt
+```

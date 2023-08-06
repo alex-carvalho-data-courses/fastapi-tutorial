@@ -23,7 +23,7 @@ async def read_thing(thing_id: int) -> dict:
 
 
 @app.get('/models/{model_name}')
-async def read_model(model_name: ModelName) -> dict:
+async def get_model(model_name: ModelName) -> dict:
     message = ''
     match model_name:
         case ModelName.ALEXNET:
@@ -34,3 +34,8 @@ async def read_model(model_name: ModelName) -> dict:
             message = 'Have some residuals'
 
     return {'model': model_name, 'message': message}
+
+
+@app.get('/files/{file_path:path}')
+async def read_file(file_path: str) -> dict:
+    return {'file_path': file_path}
