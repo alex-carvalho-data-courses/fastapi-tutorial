@@ -9,7 +9,7 @@ packages = [{include = "fastapi_tutorial"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-fastapi = "~0.101"
+fastapi = {version = "~0.101", extras = ["all"]}
 
 
 [build-system]
