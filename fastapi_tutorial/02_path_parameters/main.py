@@ -1,4 +1,13 @@
+from enum import auto, StrEnum
+
 from fastapi import FastAPI
+
+
+class ModelName(StrEnum):
+    ALEXNET = auto()
+    RESNET = auto()
+    LENET = auto()
+
 
 app = FastAPI()
 
@@ -11,3 +20,17 @@ async def read_item(item_id) -> dict:
 @app.get('/things/{thing_id}')
 async def read_thing(thing_id: int) -> dict:
     return {'thing_id': thing_id}
+
+
+@app.get('/models/{model_name}')
+async def read_model(model_name: ModelName) -> dict:
+    message = ''
+    match model_name:
+        case ModelName.ALEXNET:
+            message = 'Depp learning FTW!'
+        case ModelName.LENET:
+            message = 'LeCNN all the images'
+        case ModelName.RESNET:
+            message = 'Have some residuals'
+
+    return {'model': model_name, 'message': message}

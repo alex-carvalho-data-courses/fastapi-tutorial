@@ -6,19 +6,19 @@ http://127.0.0.1:8000/docs
 
 ## Testing lesson examples
 
-### Run uvicorn  
+### 0. Run uvicorn  
 
 ```shell
 uvicorn fastapi_tutorial.02_path_parameters.main:app --reload
 ```
 
-### 1. Invoking Path Operation with untyped parameter
+### 1. Untyped parameter
 
 ```shell
 curl 127.0.0.1:8000/items/foo
 ```
 
-### 2. Invoking Path Operation with typed parameter
+### 2. Typed Parameter
 
 Example with an int parameter:  
 
@@ -28,14 +28,37 @@ Example with an int parameter:
 curl 127.0.0.1:8000/things/123
 ```
 
-### 2.2. invalid string parameter
+#### 2.2. invalid string parameter
 
 ```shell
 curl 127.0.0.1:8000/things/foo
 ```
 
-### 2.3. invalid float parameter
+#### 2.3. invalid float parameter
 
 ```shell
 curl 127.0.0.1:8000/things/3.1
+```
+
+### 3. Predefined parameter values
+
+Possible values for this example:
+1. alexnet
+2. resnet
+3. lenet
+
+#### 3.1. valid alexnet parameter
+
+```shell
+curl 127.0.0.1:8000/models/alexnet
+```
+
+```shell
+curl 127.0.0.1:8000/models/resnet
+```
+
+#### 3.2. invalid unspecified parameter value
+
+```shell
+curl 127.0.0.1:8000/models/aleatory
 ```
