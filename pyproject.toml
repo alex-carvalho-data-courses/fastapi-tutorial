@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fastapi-tutorial"
-version = "0.2.1"
+version = "0.3.0"
 description = "Project to follow the official FastAPI tutorial [https://fastapi.tiangolo.com/tutorial/]"
 authors = ["alex carvalho <allex.carvalho@gmail.com>"]
 license = "LICENSE"
