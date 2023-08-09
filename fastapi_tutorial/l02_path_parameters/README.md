@@ -9,7 +9,7 @@ http://127.0.0.1:8000/docs
 ### 0. Run uvicorn  
 
 ```shell
-uvicorn fastapi_tutorial.02_path_parameters.main:app --reload
+uvicorn fastapi_tutorial.l02_path_parameters.main:app --reload
 ```
 
 ### 1. Untyped parameter

@@ -45,7 +45,7 @@ uvicorn <main module>:<FastAPI object> --reload
 
 Example:  
 ```shell
-uvicorn fastapi_tutorial.01_first_steps.main:app --reload
+uvicorn fastapi_tutorial.l01_first_steps.main:app --reload
 ```
 
 ##### Invoking *path_operation* with curl
